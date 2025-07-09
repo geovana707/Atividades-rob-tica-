@@ -1,25 +1,21 @@
+// Example program
 #include <iostream>
 #include <string>
 using namespace std;
-  void nota (string nm, float n1){
-   if (n1 >=7){
-      cout<<" O/a "<<nm<<" esta aprovado "<<endl;
-   }else if(n1>4 && n1 < 7){
-      cout<<" O/a "<<nm<<" esta de prova final "<<endl;
-   }else{
-     cout<<"O/a "<<nm<<" esta reprovado "<<endl;
-   }
-  }
 
-int main() {
-   float nota1;
-   string nome;
+void test(std:: string name, float n){
+    if (n >= 7){
+      cout << "Seu nome e " << name << " e sua nota foi " << n << " Com isso Aprovado" << endl;
+    } else{
+      cout << "Seu nome e " << name << " e sua nota foi " << n << " Com isso Reprovado" << endl;
+    }
+}
 
-   cout<<"Informe o nome do aluno: "<<endl;
-   cin>>nome;
-   cout<<"Informe a nota do "<<nome<<" : "<<endl;
-   cin>>nota1;
-
-   nota (nome, nota1);
-return 0;
+int main()
+{
+    std:: string nome;
+    float nota;
+    cout << "Informe seu nome e sua nota: ";
+    cin >> nome >> nota;
+    test(nome, nota);
 }
