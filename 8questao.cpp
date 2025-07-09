@@ -1,10 +1,10 @@
 #include <iostream>
 using namespace std;
-   void mostrarMensagem(){
+   void mostrar(){
        cout<<"Seja bem vindo.";
    }
 
 int main() {
-    mostrarMensagem();
+    mostrar();
     return 0;
 }
