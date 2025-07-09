@@ -1,24 +1,20 @@
+// Example program
 #include <iostream>
+#include <string>
 using namespace std;
 
-int main() {
-    float nota;
-    float* ptrNota = &nota;
-
-    cout << "Informe a nota: ";
-    cin >> *ptrNota;
-
-    if (*ptrNota >= 0 && *ptrNota <= 10) {
-        if (*ptrNota >= 7) {
-            cout << "Aluno foi aprovado" << endl;
-        } else if (*ptrNota > 4) {
-            cout << "Aluno vai pra prova final" << endl;
-        } else {
-            cout << "Aluno esta reprovado" << endl;
-        }
-    } else {
-        cout << "Nota inválida" << endl;
+void teste(float *n){
+    if (*n >= 7 ){
+        cout  << "Aprovado" << endl;
+    }else{
+        cout << "Reprovado" << endl;
     }
+}
 
-    return 0;
+int main()
+{
+  float nota ;
+  cout << "Informe sua nota: ";
+  cin >> nota;
+  teste(&nota);
 }
