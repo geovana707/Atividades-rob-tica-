@@ -1,18 +1,21 @@
+// Example program
 #include <iostream>
+#include <string>
 using namespace std;
-  void incrementar (int *p){
-      *p = *p + 1;
-      cout<<"O valor apos a incrementaçao é "<< *p<<endl;
-  }
 
-int main() {
-    int num1;
-    cout<<"Informe um valor: "<<endl;
-    cin>> num1;
-    int ptr = num1;
-    
-    incrementar(&ptr);
-    return 0;
+void incremento(int *num1, int *inc){
+    *num1 = *num1 + *inc;
+    cout << "O numero com incremento fica: " << *num1 << endl;
+}
+
+int main()
+{
+   int val;
+   int incre;
+   cout << "Digite o valor do numero e do incremento a ser colocado nele: ";
+   cin >> val >> incre;
+   incremento(&val, &incre);
+
 }
 
 
