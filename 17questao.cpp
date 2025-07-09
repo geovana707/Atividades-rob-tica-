@@ -1,21 +1,21 @@
+// Example program
 #include <iostream>
+#include <string>
 using namespace std;
-    
-    void troca (int a,int& b){
-        a = a * 3;
-        b = b * 3;
-        cout<< "valores alterados agora pricipal e "<<a<<", e o valor de referencia e "<<b<<endl;
-    }
-int main() {
-    int valor, referencia;
 
-    cout<<"Informe o valor pricipal: "<<endl;
-    cin>> valor;
-    cout<<"Informe o valor referencia: "<<endl;
-    cin>> referencia;
-    cout<<"os valores fornecidos foram principal: "<<valor<<" referencia: "<<referencia<<endl;
+void troca(int &num1, int &num2){
+    int muda = num1;
+    num1 = num2;
+    num2 = muda;
+    cout << "os valores trocados: " << num1 << " O segundo "  << num2 << endl;
+}
 
-    troca(valor,referencia);
-    
-    return 0;
+int main()
+{
+    int a;
+    int b;
+    cout << "Digite dois valores interios: ";
+    cin >> a >> b;
+    troca(a, b);
+
 }
