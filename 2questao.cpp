@@ -7,7 +7,7 @@ int main()
  int num1, num2;
  cout << "informe um numero: ";
  cin >> num1;
- cout << "informe um numero: ";
+ cout << "informe outro numero: ";
  cin >> num2;
 
  cout << "Soma: " << num1 + num2 <<endl;
