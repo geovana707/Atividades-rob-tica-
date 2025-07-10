@@ -3,7 +3,7 @@ using namespace std;
 
 int main() {
    float salario, resultado;
-   const float bonus = 15.0/100.0;
+   const float bonus = 20.0/100.0;
    
    cout<<"Informe o valor do salario: "<<endl;
    cin>>salario;
