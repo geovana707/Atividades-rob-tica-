@@ -48,5 +48,7 @@ int main()
         deposito(&saldo);
     }else if(val == 3){
         consulta(&saldo);
+
+        return 0;
     }
 }
