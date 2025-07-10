@@ -1,11 +1,34 @@
-#pragma once
+
 #include <iostream>
 using namespace std;
 
-void mostraAlgoritmo questão 1:
+// Passagem por valor
+void exibirValor(int x) {
+    std::cout << "Valor recebido por valor: " << x << "\n";
+}
 
-#include <iostream>
-#include <string>
+// Passagem por referência
+void dobrarPorReferencia(int &x) {
+    x *= 2;
+}
 
-using namespace std;
+// Ponteiros
+void inverterSinal(int* ptr) {
+    *ptr = -*ptr;
+}
+
+int main() {
+    int a = 10;
+    int b = 5;
+
+    cout << "Valor original de a: " << a << "\n";
+    exibirValor(a); // por valor
+
+    dobrarPorReferencia(a); // por referência
+    cout << "Valor de a após dobrarPorReferencia: " << a << "\n";
+
+    inverterSinal(&b); // por ponteiro
+    cout << "Valor de b após inverterSinal: " << b << "\n";
+
+    return 0; 
 }
