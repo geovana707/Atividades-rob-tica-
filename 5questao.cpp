@@ -2,17 +2,14 @@
 #include <string>
 using namespace std;
 
-int main() {
-    std::string nome;
-    int idade;
-    
-    cout<<"Informe o seu nome: ";
-    cin>> nome ;
-    cout<<"Informe sua idade: ";
-    cin>> idade;
-    
-    cout<< nome<<" tem "<<idade<<" anos de idade."<<endl;
+int main(){
+  std:: string nome;
+  int idade;
 
-    return 0;
+  cout<<"informe seu nome e idade: ";
+  cin>>nome>>idade;
+ 
+  cout<<"ola "<<nome<<" feliz aniversario de "<<idade<<"anos."<<endl;
+
+  return 0;
 }
-
