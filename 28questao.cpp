@@ -1,18 +1,16 @@
 #include <iostream>
+#include <string>
 using namespace std;
 
-struct Pessoa {
-    string nome;
-    int idade;
-    float altura;
-};
-
-void imprimir(Pessoa* p) {
-    cout << "Nome: " << p->nome << ", Idade: " << p->idade << ", Altura: " << p->altura << endl;
+void dados(std:: string *pes, int quant){
+    cout << "O seu nome e: " << pes[0] << " a sua idade e " << pes[1] << " a sua altura e " << pes[2] << endl;
 }
 
-int main() {
-    Pessoa p = {"Maria", 25, 1.65f};
-    imprimir(&p);
+
+int main()
+{
+    std:: string pessoa[3] = {"Ana", "16", "1.65"};
+    dados(pessoa, 3);
+
     return 0;
 }
